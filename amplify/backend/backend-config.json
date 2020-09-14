@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "slackclonefrontend0d445776": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  height: 100%;
+  overflow: auto;
+  background-color: "#f2f2f2";
+}
+
+.login-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 100%;
+  align-items: center;
+  max-width: 800px;
+  margin-top: 10%;
+}
+
+.login-header {
+  font-family: Slack-Larsseit, Helvetica Neue, Helvetica, Segoe UI, Tahoma,
+    Arial, sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 46px;
+  max-width: 700px;
+  text-align: center;
+  letter-spacing: -0.75px;
+  margin-bottom: 10px;
+}
+
+.login-subheader,
+.create-workspace-subheader {
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 32px;
+  color: #454245;
+  max-width: 700px;
+  text-align: center;
+}
+
+.google-login {
+  margin: 24px auto;
+}
+
+.google-login-span {
+  background-color: #fff;
+  border: 2px solid #4285f4;
+  color: #4285f4;
+  display: flex;
+  padding: 0;
+}
+
+.create-workspace-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 100%;
+  align-items: center;
+  max-width: 1000px;
+  margin-top: 10%;
+}
+
+.workspace-container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 100px 250px 1fr;
+  grid-template-rows: 35px 1fr auto;
+  width: 100%;
+}
+
+.make-private-input {
+  border: 1px solid rgb(177 177 177);
+  border-radius: 18px;
+  width: 54px;
+  outline: none;
+  appearance: none;
+  height: 30px;
+  transition: background-color 0.1s ease-in;
+  cursor: pointer;
+}
+
+.make-private-input:checked {
+  background-color: #007a5a;
+  border: none;
+}
+
+.animations-handler {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.animations-handler::before {
+  content: "\E704";
+  top: 2px;
+  left: 2px;
+  display: inline-block;
+  font-family: Slack v2;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.1s ease-in;
+}
+
+.animations-handler::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  transform-origin: center;
+  transform: translateZ(0);
+  transition: transform 0.1s ease-in, background-color 0.1s ease-in;
+}
+
+.make-private-input:checked + .animations-handler::before {
+  position: absolute;
+  color: #fff;
+}
+.make-private-input:checked + .animations-handler::after {
+  background-color: #fff;
+  transform: translate3d(22px, 0, 0);
+}

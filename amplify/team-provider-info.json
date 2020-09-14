@@ -1,0 +1,22 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-slackclonefrontend-dev-235008-authRole",
+      "UnauthRoleArn": "arn:aws:iam::273905952168:role/amplify-slackclonefrontend-dev-235008-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::273905952168:role/amplify-slackclonefrontend-dev-235008-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-slackclonefrontend-dev-235008-deployment",
+      "UnauthRoleName": "amplify-slackclonefrontend-dev-235008-unauthRole",
+      "StackName": "amplify-slackclonefrontend-dev-235008",
+      "StackId": "arn:aws:cloudformation:us-east-1:273905952168:stack/amplify-slackclonefrontend-dev-235008/3a06f0c0-f0bd-11ea-928f-0a726edfb5e3",
+      "AmplifyAppId": "d1uy95thhvh46l"
+    },
+    "categories": {
+      "auth": {
+        "slackclonefrontend0d445776": {
+          "hostedUIProviderCreds": "[{\"ProviderName\":\"Google\",\"client_id\":\"913998158459-61irgcekmqjptj7gsoobupmickfcjpoa.apps.googleusercontent.com\",\"client_secret\":\"TXzp7aSnX7p21GiTuJcJkbhp\"}]"
+        }
+      }
+    }
+  }
+}
